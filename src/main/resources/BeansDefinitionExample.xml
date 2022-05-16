@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean class="com.Enjtity" scope="Singleton">
+		<property name="prop1" value="2"/>
+		<property name="prop2" value="aa"/>
+		<bean class="com.Enjtity" scope="Singleton">
+			<property name="prop4" value="2.4"/>
+		</bean>
+		<bean class="com.Enjtity" scope="Prototype">
+			<property name="prop5" value="true"/>
+		</bean>
+	</bean>
+	<bean class="com.Enjtity" scope="Singleton">
+		<property name="prop10" value="2"/>
+		<property name="prop20" value="aa"/>
+		<bean class="com.Enjtity" scope="Singleton">
+			<property name="prop30" value="2.4"/>
+		</bean>
+		<bean class="com.Enjtity" scope="Prototype">
+			<property name="prop40" value="true"/>
+		</bean>
+	</bean>
+</beans>
